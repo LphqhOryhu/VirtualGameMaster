@@ -1,21 +1,22 @@
-'use client';
-
-import { useEffect, useState } from 'react';
+import StatusPanel from '../src/components/StatusPanel'
+import InventoryPanel from '../src/components/InventoryPanel';
+import HistoryPanel from '../src/components/HistoryPanel'
+import ChatPanel from '../src/components/ChatPanel'
 
 export default function Home() {
-  const [message, setMessage] = useState('');
+    return (
+        <main className="flex h-screen p-4 bg-gray-100 gap-4">
+            <div className="w-1/4">
+                <StatusPanel />
+                <InventoryPanel />
+            </div>
+            <div className="w-2/4 flex flex-col">
+                <ChatPanel />
+            </div>
 
-  useEffect(() => {
-    fetch('http://localhost:3005/')
-        .then((res) => res.text())
-        .then((data) => setMessage(data))
-        .catch((err) => console.error('Erreur:', err));
-  }, []);
-
-  return (
-      <main className="p-10">
-        <h1 className="text-3xl font-bold">Front + Back test</h1>
-        <p className="mt-4 text-xl">Réponse du backend : {message}</p>
-      </main>
-  );
+            <div className="w-1/4">
+                <HistoryPanel />
+            </div>
+        </main>
+    );
 }

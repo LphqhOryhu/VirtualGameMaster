@@ -1,0 +1,15 @@
+{
+  "title": "La Fureur du Roi de Cuivre",
+  "acte": 1,
+  "objectif_principal": "Créer une guilde libre d'artisans",
+  "sous_objectifs": [
+    "Convaincre le roi",
+    "Recruter 5 artisans",
+    "Explorer une ancienne forge"
+  ],
+  "étapes_accomplies": [],
+  "état_monde": {
+    "ville": "méfiante",
+    "ressources": ["minerai de cuivre"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Zoltar": {
+    "nom": "Zoltar",
+    "description": "Silhouette floue, mystérieuse, surnommée 'tonton'",
+    "relation": "méfiant",
+    "rencontré": true,
+    "notes": "A parlé d'une trahison passée"
+  }
+}
